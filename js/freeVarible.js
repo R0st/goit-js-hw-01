@@ -65,35 +65,72 @@
 // }
  
 // 5 задача
-let price;
-let country = prompt('Укажите вашу страну');
-let message;
+// let price;
+// let country = prompt('Укажите вашу страну');
+// let message;
 
-switch (message) {
+// switch (message) {
+//     case 'Китай':
+//         price = 100;
+//         break;
+
+//     case 'Чили':
+//         price = 250;
+//         break;
+    
+//     case 'Австралия':
+//         price = 170;
+//         break;
+    
+//     case 'Индия':
+//         price = 80;
+//         break;
+    
+//     case 'Ямайка':
+//         price = 120;
+//         break;
+    
+//     default:
+//         console.log('В вашей стране доставка не доступна');
+// }
+// console.log(`Доставка в ${country.length} будет стоить ${price} кредитов`);
+
+
+let price;
+// let country;
+const country = prompt('Укажите вашу страну');
+// let normalizedCountry = country.toUpperCase();
+
+
+switch (country) {
     case 'Китай':
+        let normalizedCountry = country.toUpperCase();
         price = 100;
+        console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`);
         break;
 
     case 'Чили':
         price = 250;
+        console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
         break;
     
     case 'Австралия':
         price = 170;
+        console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
         break;
     
     case 'Индия':
         price = 80;
+        console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
         break;
     
-    case 'Ямайка':
+    case  'Ямайка':
         price = 120;
+        console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
         break;
     
     default:
         console.log('В вашей стране доставка не доступна');
 }
-console.log(`Доставка в ${country.length} будет стоить ${price} кредитов`);
-
 
 // 6 задача
